@@ -1,0 +1,19 @@
+.heading{
+	text-decoration: underline;
+	font-family: arial;
+	font-size: x-large;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.general{
+	font-style: italic;
+	text-align: justify;
+}
+.places{
+	font-family: cursive;
+	font-size: medium;
+}
+.non{
+	font-size: small;
+	font-family: Verdana;
+}
