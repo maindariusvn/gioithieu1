@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Web đọc truyện tranh</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style type="text/css">
+		body
+		{
+			margin: 0px !important;
+			padding: 0px !important;
+			font-family: arial;
+			background-color: #ebebeb;
+		}
+		.SmallBlock
+		{
+			width: 70%;
+			display: block;
+			margin: 0px auto;
+		}
+		.Logo
+		{
+			background-color: white;
+			padding-top: 5px;
+			padding-bottom: 5px;
+			width: 100%;
+			height: 60px;
+		}
+		.FlexBlock
+		{
+			display: flex;
+		}
+		.FlexBlock a
+		{
+			text-decoration: none;
+		}
+		.Thumb
+		{
+			width: 183px;
+			height: 238px;
+		}
+		.LinkTextLogo
+		{
+			text-decoration: none;
+			color: #606360;
+			padding-right: 10px;
+		}
+		.LinkTextLogo:hover
+		{
+			color: #f18121;
+		}
+		.SearchIcon
+		{
+			padding-top: 10px;
+			padding-right: 5px;
+		}
+		.SearchIcon a
+		{
+			text-decoration: none;
+			color: #f2882e;
+		}
+		.SearchBar
+		{
+			border: none;
+			width: 440px;
+			height: 30px;
+			padding-top: 5px;
+			outline: none;
+		}
+		.LogoIMG
+		{
+			padding-top: 10px;
+			padding-right: 80px;
+		}
+		.SearchBarBlock
+		{
+			padding-left: 20px;
+			height: 40px;
+			width: 450px;
+		}
+		.SearchBarBorder
+		{
+			display: flex;
+			border: solid 1px #e0e0e0;
+			border-radius: 50px;
+			width: 500px;
+		}
+		.SearchBarBorderPadding
+		{
+			padding-top: 8px;
+			padding-right: 150px;
+		}
+		.LogoText
+		{
+			padding-top: 20px;
+		}
+		.NavBar
+		{
+			height: 50px;
+			background-color: #2c7abe;
+		}
+		.NavBarText
+		{
+			padding-left: 12px;
+			padding-right: 12px;
+			padding-top: 16px;
+			padding-bottom: 16px;
+			color: #dde8f5;
+		}
+		.NavBarText:hover
+		{
+			background-color: #f29c57;
+		}
+		.footer
+		{
+			height: 38px;
+			background-color: white;
+		}
+		.Copyright
+		{
+			padding-top: 10px;
+			padding-bottom: 10px;
+			color: #969796;
+		}
+		.main
+		{
+			padding-top: 20px;
+		}
+		.TitleText
+		{
+			text-decoration: none;
+			color: #ff2853;
+		}
+		.PaddingTitleText
+		{
+			margin: 0px;
+			padding-bottom: 25px;
+		}
+		.PaddingTitleText3
+		{
+			margin: 0px;
+			padding-bottom: 25px;
+			padding-top: 20px;
+		}
+		.Name
+		{
+			color: black;
+		}
+		.Name:hover
+		{
+			color: #f08e21;
+		}
+		.Chapter
+		{
+			color: #ababab;
+		}
+		.Chapter:hover
+		{
+			color: #f08e21;
+		}
+		.column
+		{
+			height: 327px;
+			padding-right: 40px;
+		}
+		.column center
+		{
+			padding-top: 15px;
+		}
+		.MoreButton
+		{
+			outline: none;
+			background-color: #f18121;
+			border: none;
+			border-radius: 5px;
+			padding-top: 12px;
+			padding-bottom: 12px;
+			padding-left: 20px;
+			padding-right: 20px;
+			color: white;
+			margin-bottom: 20px;
+		}
+		.MoreButton:hover
+		{
+			cursor: pointer;
+			background-color: #eeb686;
+		}
+		.TitleText2
+		{
+			color: #f18121;
+			text-decoration: none;
+		}
+		.TitleText3
+		{
+			color: #56ccf2;
+			text-decoration: none;
+		}
+	</style>
+</head>
+<body>
+	<div class="header">
+		<div class="Logo">
+			<div class="SmallBlock">
+				<div class="FlexBlock">
+					<a href="khotruyen.html">
+						<img class="LogoIMG" src="https://khotruyen.net/images/logo.png">
+					</a>
+					<div class="SearchBarBorderPadding">
+						<div class="SearchBarBorder">
+							<div class="SearchBarBlock">
+								<input class="SearchBar" type="SearchBar" name="SearchBar" placeholder="Nhập tên truyện cần tìm">
+							</div>
+							<div class="SearchIcon">
+								<a href="">
+									<i class="fa fa-search"></i>
+								</a>
+							</div>	
+						</div>
+					</div>
+					<div class="LogoText">
+						<a class="LinkTextLogo" href="">Truyện tranh mới</a>
+						<a class="LinkTextLogo" href=""><b>Truyện mới cập nhật</b></a>
+						<a class="LinkTextLogo" href="">Truyện full</a>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="NavBar">
+			<div class="SmallBlock">
+				<div class="FlexBlock">
+					<a href="">
+						<div class="NavBarText">
+							Trang chủ
+					</div>
+					</a>
+					<a href="">
+						<div class="NavBarText">
+							Thể loại
+						</div>
+					</a>
+					<a href="">
+						<div class="NavBarText">
+							Quốc Gia
+						</div>
+					</a>
+					<a href="">
+						<div class="NavBarText">
+							Sắp Xếp
+						</div>
+					</a>
+					<a href="">
+						<div class="NavBarText">
+							Truyện Con Trai
+						</div>
+					</a>
+					<a href="">
+						<div class="NavBarText">
+							Truyện Con Gái
+						</div>
+					</a>
+				</div>
+			</div>	
+		</div>
+	</div>
+	<div class="main">
+		<div class="SmallBlock">
+			<h2 class="PaddingTitleText">
+				<a class="TitleText" href="">
+					<i class="fa fa-bolt"></i>
+					Truyện mới cập nhật
+				</a>
+			</h2>
+			<div class="row">
+				<div class="FlexBlock">
+					<div class="column">
+						<a href=""><img class="Thumb" src="https://khotruyen.net/images/hoa-nhan-sach.jpg"></a>
+						<br/>
+						<center>
+							<a class="Name" href="">Hoa nhan sách</a>
+							<br/>
+							<a class="Chapter" href="">Chapter 193</a>
+						</center>
+					</div>
+					<div class="column">
+						<a href=""><img class="Thumb" src="https://khotruyen.net/images/than-cap-ngu-phu.jpg"></a>
+						<br/>
+						<center>
+							<a class="Name" href="">Thần Cấp Ngư Phu</a>
+							<br/>
+							<a class="Chapter" href="">Chapter 107</a>
+						</center>
+					</div>
+					<div class="column">
+						<a href=""><img class="Thumb" src="https://khotruyen.net/images/con-gai-cua-quy-vuong-de-doi-pho-that-day.jpg"></a>
+						<br/>
+						<center>
+							<a class="Name" href="">Con Gái Của Quỷ Vương Dễ Đối Phó Thật Đấy</a>
+							<br/>
+							<a class="Chapter" href="">Chapter 8</a>
+						</center>
+					</div>
+					<div class="column">
+						<a href=""><img class="Thumb" src="https://khotruyen.net/images/ton-thuong.jpg"></a>
+						<br/>
+						<center>
+							<a class="Name" href="">Tôn Thượng</a>
+							<br/>
+							<a class="Chapter" href="">Chapter 161</a>
+						</center>
+					</div>
+					<div class="column">
+						<a href=""><img class="Thumb" src="https://khotruyen.net/images/goshujin-sama-to-h-na-koto-shitai-dorei-no-manga.jpg"></a>
+						<br/>
+						<center>
+							<a class="Name" href="">Goshujin-sama to H na Koto Shitai Dorei no Manga</a>
+							<br/>
+							<a class="Chapter" href="">Chapter 14</a>
+						</center>
+					</div>
+					<div class="column">
+						<a href=""><img class="Thumb" src="https://khotruyen.net/images/this-girl-is-a-little-wild.jpg"></a>
+						<br/>
+						<center>
+							<a class="Name" href="">This Girl is a Little Wild</a>
+							<br/>
+							<a class="Chapter" href="">Chapter 27</a>
+						</center>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="FlexBlock">
+					<div class="column">
+						<a href=""><img class="Thumb" src="https://khotruyen.net/images/vo-toi-la-mot-oni.jpg"></a>
+						<br/>
+						<center>
+							<a class="Name" href="">Vợ Tôi Là Một Oni</a>
+							<br/>
+							<a class="Chapter" href="">Chapter 19</a>
+						</center>
+					</div>
+					<div class="column">
+						<a href=""><img class="Thumb" src="https://khotruyen.net/images/dung-choc-dua-em-gai-be-bong-cua-chung-toi.jpg"></a>
+						<br/>
+						<center>
+							<a class="Name" href="">Đừng Chọc Đứa Em Gái Bé Bỏng Của Chúng Tôi</a>
+							<br/>
+							<a class="Chapter" href="">Chapter 3.4</a>
+						</center>
+					</div>
+					<div class="column">
+						<a href=""><img class="Thumb" src="https://khotruyen.net/images/phim-gia-lam-that.jpg"></a>
+						<br/>
+						<center>
+							<a class="Name" href="">Phim Giả Làm Thật</a>
+							<br/>
+							<a class="Chapter" href="">Chapter 75.2</a>
+						</center>
+					</div>
+					<div class="column">
+						<a href=""><img class="Thumb" src="https://khotruyen.net/images/trong-sinh-tro-lai-sung-nich-doc-nhat-vo-nhi.jpg"></a>
+						<br/>
+						<center>
+							<a class="Name" href="">Trọng Sinh Trở Lại: Sủng Nịch Độc Nhất Vô Nhị</a>
+							<br/>
+							<a class="Chapter" href="">Chapter 25</a>
+						</center>
+					</div>
+					<div class="column">
+						<a href=""><img class="Thumb" src="https://khotruyen.net/images/fff-class-trashero.jpg"></a>
+						<br/>
+						<center>
+							<a class="Name" href="">FFF-Class Trashero</a>
+							<br/>
+							<a class="Chapter" href="">Chapter 64</a>
+						</center>
+					</div>
+					<div class="column">
+						<a href=""><img class="Thumb" src="https://khotruyen.net/images/dinh-cap-vo-hon.jpg"></a>
+						<br/>
+						<center>
+							<a class="Name" href="">Đỉnh Cấp Võ Hồn</a>
+							<br/>
+							<a class="Chapter" href="">Chapter 16</a>
+						</center>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="FlexBlock">
+					<div class="column">
+						<a href=""><img class="Thumb" src="https://khotruyen.net/images/pham-nhan-tu-tien.jpg"></a>
+						<br/>
+						<center>
+							<a class="Name" href="">Phàm Nhân Tu Tiên</a>
+							<br/>
+							<a class="Chapter" href="">Chapter 70</a>
+						</center>
+					</div>
+					<div class="column">
+						<a href=""><img class="Thumb" src="https://khotruyen.net/images/tam-dong-thuan-di.jpg"></a>
+						<br/>
+						<center>
+							<a class="Name" href="">Tâm Động Thuấn Di</a>
+							<br/>
+							<a class="Chapter" href="">Chapter 8</a>
+						</center>
+					</div>
+					<div class="column">
+						<a href=""><img class="Thumb" src="https://khotruyen.net/images/nhat-dang-gia-dinh.jpg"></a>
+						<br/>
+						<center>
+							<a class="Name" href="">Nhất đẳng gia đinh</a>
+							<br/>
+							<a class="Chapter" href="">Chapter 152</a>
+						</center>
+					</div>
+					<div class="column">
+						<a href=""><img class="Thumb" src="https://khotruyen.net/images/tuyet-the-de-ton.jpg"></a>
+						<br/>
+						<center>
+							<a class="Name" href="">Tuyệt Thế Đế Tôn</a>
+							<br/>
+							<a class="Chapter" href="">Chapter 107</a>
+						</center>
+					</div>
+					<div class="column">
+						<a href=""><img class="Thumb" src="https://khotruyen.net/images/vo-luyen-dinh-phong.jpg"></a>
+						<br/>
+						<center>
+							<a class="Name" href="">Võ Luyện Đỉnh Phong</a>
+							<br/>
+							<a class="Chapter" href="">Chapter 832</a>
+						</center>
+					</div>
+					<div class="column">
+						<a href=""><img class="Thumb" src="https://khotruyen.net/images/do-kiep-tro-thanh-hoc-sinh-trung-hoc.jpg"></a>
+						<br/>
+						<center>
+							<a class="Name" href="">Độ Kiếp Trở Thành Học Sinh Trung Học</a>
+							<br/>
+							<a class="Chapter" href="">Chapter 77</a>
+						</center>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="FlexBlock">
+					<div class="column">
+						<a href=""><img class="Thumb" src="https://khotruyen.net/images/phuong-hoang-vu-phi.jpg"></a>
+						<br/>
+						<center>
+							<a class="Name" href="">Phượng hoàng vu phi</a>
+							<br/>
+							<a class="Chapter" href="">Chapter 52</a>
+						</center>
+					</div>
+					<div class="column">
+						<a href=""><img class="Thumb" src="https://khotruyen.net/images/gian-phi-nhu-thu-da-kieu.jpg"></a>
+						<br/>
+						<center>
+							<a class="Name" href="">Gian Phi Như Thử Đa Kiều</a>
+							<br/>
+							<a class="Chapter" href="">Chapter 111</a>
+						</center>
+					</div>
+					<div class="column">
+						<a href=""><img class="Thumb" src="https://khotruyen.net/images/cuu-khuyet-phong-hoa.jpg"></a>
+						<br/>
+						<center>
+							<a class="Name" href="">Cửu Khuyết Phong Hoa</a>
+							<br/>
+							<a class="Chapter" href="">Chapter 102</a>
+						</center>
+					</div>
+					<div class="column">
+						<a href=""><img class="Thumb" src="https://khotruyen.net/images/ma-vuong-luyen-ai-chi-nam.jpg"></a>
+						<br/>
+						<center>
+							<a class="Name" href="">Ma Vương Luyến Ái Chỉ Nam</a>
+							<br/>
+							<a class="Chapter" href="">Chapter 124</a>
+						</center>
+					</div>
+					<div class="column">
+						<a href=""><img class="Thumb" src="https://khotruyen.net/images/tay-du.jpg"></a>
+						<br/>
+						<center>
+							<a class="Name" href="">Tây Du</a>
+							<br/>
+							<a class="Chapter" href="">Chapter 221</a>
+						</center>
+					</div>
+					<div class="column">
+						<a href=""><img class="Thumb" src="https://khotruyen.net/images/thien-dong-ly-trach-thuong.jpg"></a>
+						<br/>
+						<center>
+							<a class="Name" href="">Thiên Động Ly Trạch Thương</a>
+							<br/>
+							<a class="Chapter" href="">Chapter 5</a>
+						</center>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="FlexBlock">
+					<div class="column">
+						<a href=""><img class="Thumb" src="https://khotruyen.net/images/tram-cung-khong-muon-qua-khi-phach.jpg"></a>
+						<br/>
+						<center>
+							<a class="Name" href="">Trẫm Cũng Không Muốn Quá Khí Phách</a>
+							<br/>
+							<a class="Chapter" href="">Chapter 59</a>
+						</center>
+					</div>
+					<div class="column">
+						<a href=""><img class="Thumb" src="https://khotruyen.net/images/manh-su-tai-thuong.jpg"></a>
+						<br/>
+						<center>
+							<a class="Name" href="">Manh Sư Tại Thượng</a>
+							<br/>
+							<a class="Chapter" href="">Chapter 234</a>
+						</center>
+					</div>
+					<div class="column">
+						<a href=""><img class="Thumb" src="https://khotruyen.net/images/hoa-si-truyen-tranh-ngoai-truyen.jpg"></a>
+						<br/>
+						<center>
+							<a class="Name" href="">Họa Sĩ Truyện Tranh ngoại truyện</a>
+							<br/>
+							<a class="Chapter" href="">Chapter 13</a>
+						</center>
+					</div>
+					<div class="column">
+						<a href=""><img class="Thumb" src="https://khotruyen.net/images/dung-lai-phung-chi-an-cuop.jpg"></a>
+						<br/>
+						<center>
+							<a class="Name" href="">Đứng Lại! Phụng Chỉ Ăn Cướp</a>
+							<br/>
+							<a class="Chapter" href="">Chapter 8</a>
+						</center>
+					</div>
+					<div class="column">
+						<a href=""><img class="Thumb" src="https://khotruyen.net/images/awkward-senpai.jpg"></a>
+						<br/>
+						<center>
+							<a class="Name" href="">Awkward Senpai</a>
+							<br/>
+							<a class="Chapter" href="">Chapter 193</a>
+						</center>
+					</div>
+					<div class="column">
+						<a href=""><img class="Thumb" src="https://khotruyen.net/images/vuon-truong-cuong-su-he-thong.jpg"></a>
+						<br/>
+						<center>
+							<a class="Name" href="">Vườn Trường Cuồng Sư Hệ Thống</a>
+							<br/>
+							<a class="Chapter" href="">Chapter 149</a>
+						</center>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="FlexBlock">
+					<div class="column">
+						<a href=""><img class="Thumb" src="https://khotruyen.net/images/cuong-nhiet-boss-sung-the-xin-kiem-che.jpg"></a>
+						<br/>
+						<center>
+							<a class="Name" href="">Cuồng nhiệt boss, sủng thê xin kiềm chế</a>
+							<br/>
+							<a class="Chapter" href="">Chapter 98</a>
+						</center>
+					</div>
+					<div class="column">
+						<a href=""><img class="Thumb" src="https://khotruyen.net/images/lai-gap-duoc-em.jpg"></a>
+						<br/>
+						<center>
+							<a class="Name" href="">Lại Gặp Được Em</a>
+							<br/>
+							<a class="Chapter" href="">Chapter 64</a>
+						</center>
+					</div>
+					<div class="column">
+						<a href=""><img class="Thumb" src="https://khotruyen.net/images/an-hon-100-choc-tuc-vo-yeu-mua-mot-tang-mot.jpg"></a>
+						<br/>
+						<center>
+							<a class="Name" href="">Ẩn hôn 100%: Chọc tức vợ yêu mua một tặng một</a>
+							<br/>
+							<a class="Chapter" href="">Chapter 230</a>
+						</center>
+					</div>
+					<div class="column">
+						<a href=""><img class="Thumb" src="https://khotruyen.net/images/nghich-thien-ta-than.jpg"></a>
+						<br/>
+						<center>
+							<a class="Name" href="">Nghịch Thiên Tà Thần</a>
+							<br/>
+							<a class="Chapter" href="">Chapter 239</a>
+						</center>
+					</div>
+					<div class="column">
+						<a href=""><img class="Thumb" src="https://khotruyen.net/images/tinh-vo-than-quyet.jpg"></a>
+						<br/>
+						<center>
+							<a class="Name" href="">Tinh Võ Thần Quyết</a>
+							<br/>
+							<a class="Chapter" href="">Chapter 405</a>
+						</center>
+					</div>
+					<div class="column">
+						<a href=""><img class="Thumb" src="https://khotruyen.net/images/bon-te-tu-chinh-la-tien-dao.jpg"></a>
+						<br/>
+						<center>
+							<a class="Name" href="">Bổn Tế Tu Chính Là Tiện Đạo</a>
+							<br/>
+							<a class="Chapter" href="">Chapter 72</a>
+						</center>
+					</div>
+				</div>
+			</div>
+			<center>
+				<div class="More">
+					<a href=""><button class="MoreButton"><b>Xem nhiều truyện hơn</b></button></a>
+				</div>
+			</center>
+			<h2 class="PaddingTitleText">
+				<a class="TitleText2" href="">
+					<i class="fa fa-users"></i>
+					Truyện yêu thích
+				</a>
+			</h2>
+			<div class="row">
+				<div class="FlexBlock">
+					<div class="column">
+						<a href=""><img class="Thumb" src="https://khotruyen.net/images/hiep-khach-giang-ho.jpg"></a>
+						<br/>
+						<center>
+							<a class="Name" href="">Hiệp Khách Giang Hồ</a>
+							<br/>
+							<a class="Chapter" href="">Chapter 598</a>
+						</center>
+					</div>
+					<div class="column">
+						<a href=""><img class="Thumb" src="https://khotruyen.net/images/co-vo-hop-dong-bo-tron-cua-tong-giam-doc.jpg"></a>
+						<br/>
+						<center>
+							<a class="Name" href="">Cô Vợ Hợp Đồng Bỏ Trốn Của Tổng Giám Đốc</a>
+							<br/>
+							<a class="Chapter" href="">Chapter 279</a>
+						</center>
+					</div>
+					<div class="column">
+						<a href=""><img class="Thumb" src="https://khotruyen.net/images/thieu-soai-vo-ngai-lai-bo-tron.jpg"></a>
+						<br/>
+						<center>
+							<a class="Name" href="">Thiếu Soái ! Vợ Ngài Lại Bỏ Trốn</a>
+							<br/>
+							<a class="Chapter" href="">Chapter 294</a>
+						</center>
+					</div>
+					<div class="column">
+						<a href=""><img class="Thumb" src="https://khotruyen.net/images/dua-mami-ve-nha.jpg"></a>
+						<br/>
+						<center>
+							<a class="Name" href="">TĐưa mami về nhà</a>
+							<br/>
+							<a class="Chapter" href="">Chapter 307</a>
+						</center>
+					</div>
+					<div class="column">
+						<a href=""><img class="Thumb" src="https://khotruyen.net/images/vo-luyen-dinh-phong.jpg"></a>
+						<br/>
+						<center>
+							<a class="Name" href="">Võ Luyện Đỉnh Phong</a>
+							<br/>
+							<a class="Chapter" href="">Chapter 832</a>
+						</center>
+					</div>
+					<div class="column">
+						<a href=""><img class="Thumb" src="https://khotruyen.net/images/co-vo-am-ap-cua-ha-thieu.jpg"></a>
+						<br/>
+						<center>
+							<a class="Name" href="">Cô vợ ấm áp của hạ thiếu</a>
+							<br/>
+							<a class="Chapter" href="">Chapter 299</a>
+						</center>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="FlexBlock">
+					<div class="column">
+						<a href=""><img class="Thumb" src="https://khotruyen.net/images/thong-linh-phi.jpg"></a>
+						<br/>
+						<center>
+							<a class="Name" href="">Thông Linh Phi</a>
+							<br/>
+							<a class="Chapter" href="">Chapter 633</a>
+						</center>
+					</div>
+					<div class="column">
+						<a href=""><img class="Thumb" src="https://khotruyen.net/images/toi-thang-cap-mot-minh.jpg"></a>
+						<br/>
+						<center>
+							<a class="Name" href="">Tôi thăng cấp một mình</a>
+							<br/>
+							<a class="Chapter" href="">Chapter 124</a>
+						</center>
+					</div>
+					<div class="column">
+						<a href=""><img class="Thumb" src="https://khotruyen.net/images/bong-mot-ngay-tro-thanh-con-gai-nha-vua.jpg"></a>
+						<br/>
+						<center>
+							<a class="Name" href="">Bỗng Một Ngày Trở Thành Con Gái Nhà Vua</a>
+							<br/>
+							<a class="Chapter" href="">Chapter 238</a>
+						</center>
+					</div>
+					<div class="column">
+						<a href=""><img class="Thumb" src="https://khotruyen.net/images/trong-sinh-do-thi-tu-tien.jpg"></a>
+						<br/>
+						<center>
+							<a class="Name" href="">Trọng Sinh Đô Thị Tu Tiên</a>
+							<br/>
+							<a class="Chapter" href="">Chapter 516</a>
+						</center>
+					</div>
+					<div class="column">
+						<a href=""><img class="Thumb" src="https://khotruyen.net/images/thanh-guom-diet-quy.jpg"></a>
+						<br/>
+						<center>
+							<a class="Name" href="">Thanh Gươm Diệt Quỷ</a>
+							<br/>
+							<a class="Chapter" href="">Chapter 205</a>
+						</center>
+					</div>
+					<div class="column">
+						<a href=""><img class="Thumb" src="https://khotruyen.net/images/bach-luyen-thanh-than.jpg"></a>
+						<br/>
+						<center>
+							<a class="Name" href="">Bách Luyện Thành Thần</a>
+							<br/>
+							<a class="Chapter" href="">Chapter 616</a>
+						</center>
+					</div>
+				</div>
+			</div>
+			<h2 class="PaddingTitleText3">
+				<a class="TitleText3" href="">
+					<i class="fa fa-power-off"></i>
+					Truyện full
+				</a>
+			</h2>
+			<div class="row">
+				<div class="FlexBlock">
+					<div class="column">
+						<a href=""><img class="Thumb" src="https://khotruyen.net/images/cam-ly-thieu-nu-cua-toi.jpg"></a>
+						<br/>
+						<center>
+							<a class="Name" href="">Cẩm Lý thiếu nữ của tôi</a>
+							<br/>
+							<a class="Chapter" href="">Chapter 117</a>
+						</center>
+					</div>
+					<div class="column">
+						<a href=""><img class="Thumb" src="https://khotruyen.net/images/coda.jpg"></a>
+						<br/>
+						<center>
+							<a class="Name" href="">Coda</a>
+							<br/>
+							<a class="Chapter" href="">Chapter 14</a>
+						</center>
+					</div>
+					<div class="column">
+						<a href=""><img class="Thumb" src="https://khotruyen.net/images/co-be-cua-rieng-toi.jpg"></a>
+						<br/>
+						<center>
+							<a class="Name" href="">Cô Bé Của Riêng Tôi</a>
+							<br/>
+							<a class="Chapter" href="">Chapter 6</a>
+						</center>
+					</div>
+					<div class="column">
+						<a href=""><img class="Thumb" src="https://khotruyen.net/images/orange.jpg"></a>
+						<br/>
+						<center>
+							<a class="Name" href="">Orange</a>
+							<br/>
+							<a class="Chapter" href="">Chapter 22</a>
+						</center>
+					</div>
+					<div class="column">
+						<a href=""><img class="Thumb" src="https://khotruyen.net/images/dung-chong-doi.jpg"></a>
+						<br/>
+						<center>
+							<a class="Name" href="">Đừng Chống Đối</a>
+							<br/>
+							<a class="Chapter" href="">Chapter 6</a>
+						</center>
+					</div>
+					<div class="column">
+						<a href=""><img class="Thumb" src="https://khotruyen.net/images/kuchi-ga-saketemo-kimi-niwa.jpg"></a>
+						<br/>
+						<center>
+							<a class="Name" href="">Kuchi Ga Saketemo Kimi Niwa</a>
+							<br/>
+							<a class="Chapter" href="">Chapter 3</a>
+						</center>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="FlexBlock">
+					<div class="column">
+						<a href=""><img class="Thumb" src="https://khotruyen.net/images/bac-ha-chi-ha.jpg"></a>
+						<br/>
+						<center>
+							<a class="Name" href="">Bạc Hà Chi Hạ</a>
+							<br/>
+							<a class="Chapter" href="">Chapter 40</a>
+						</center>
+					</div>
+					<div class="column">
+						<a href=""><img class="Thumb" src="https://khotruyen.net/images/ao-no-fuuin-blue-seal.jpg"></a>
+						<br/>
+						<center>
+							<a class="Name" href="">Ao no Fuuin - Blue Seal</a>
+							<br/>
+							<a class="Chapter" href="">Chapter 53</a>
+						</center>
+					</div>
+					<div class="column">
+						<a href=""><img class="Thumb" src="https://khotruyen.net/images/shokuryou-jinrui.jpg"></a>
+						<br/>
+						<center>
+							<a class="Name" href="">Shokuryou Jinrui</a>
+							<br/>
+							<a class="Chapter" href="">Chapter 62</a>
+						</center>
+					</div>
+					<div class="column">
+						<a href=""><img class="Thumb" src="https://khotruyen.net/images/aiki.jpg"></a>
+						<br/>
+						<center>
+							<a class="Name" href="">Aiki</a>
+							<br/>
+							<a class="Chapter" href="">Chapter 98</a>
+						</center>
+					</div>
+					<div class="column">
+						<a href=""><img class="Thumb" src="https://khotruyen.net/images/change-guy.jpg"></a>
+						<br/>
+						<center>
+							<a class="Name" href="">Change Guy</a>
+							<br/>
+							<a class="Chapter" href="">Chapter 338</a>
+						</center>
+					</div>
+					<div class="column">
+						<a href=""><img class="Thumb" src="https://khotruyen.net/images/tay-du.jpg"></a>
+						<br/>
+						<center>
+							<a class="Name" href="">Tây Du</a>
+							<br/>
+							<a class="Chapter" href="">Chapter 222</a>
+						</center>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="SmallBlock">
+			<div class="Copyright">
+				Copyright © 2019 KhoTruyen - Kho Truyện Tranh Hay Nhất.
+			</div>
+		</div>
+	</div>
+</body>
+</html>
