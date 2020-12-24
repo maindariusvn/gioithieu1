@@ -1,0 +1,152 @@
+body{
+	background-color: black;
+}
+
+.img{
+	margin-left: 19%;
+	height: 85px;
+}
+
+.content{
+	margin-left: 49px;
+	text-align: center;
+	margin-top: 25px;
+	color: red;
+	font-size: 17px;
+
+}
+
+.sl-hdtop {
+    padding-top: 20px;
+    margin-bottom: 20px;
+    margin-left:5%;
+    text-align: center;
+}
+
+.container {
+    position: relative;
+}
+
+.sl-hdcbox {
+    border: 1px solid #31353d;
+    background: #000;
+}
+
+.sl-htit {
+    padding: 2px 0;
+    color: yellow;
+}
+
+.sl-ht1 {
+    padding: 20px 0;
+    font-size: 24px;
+}
+
+.sl-col {
+    float: left;
+    padding: 0 12px;
+    position: relative;
+}
+
+.sl-col1 {
+    width: 31.324%;
+}
+
+.top{
+	color: #fc6f03;
+}
+
+.sl-produl {
+    margin: 0 -5px 13px;
+}
+
+.sl-prodli {
+    float: left;
+    width: 23%;
+    padding: 0 5px;
+    margin-bottom: 10px;
+    position: relative;
+    color: #9500ff;
+}
+
+.sl-prodbox {
+    height: 350px;
+    position: relative;
+    background: #1f2228;
+}
+
+.sl-prcode {
+    height: 40px;
+    padding: 0 10px;
+    line-height: 1.3;
+    font-size: 15px;
+    color: #ff3600;
+    background: rgba(0,0,0,.5);
+}
+
+.sl-prlinks {
+    display: block;
+}
+
+.sl-primg {
+    height: 155px;
+    line-height: 155px;
+    text-align: center;
+}
+
+.sl-primg img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.sl-prifbot {
+    padding: 15px;
+    max-height: 175px;
+}
+
+.sl-prifbot ul {
+    height: 77px;
+    overflow: hidden;
+}
+
+.sl-prifbot ul li {
+    font-size: 15px;
+    color: #dadada;
+    padding-left: 15px;
+    margin-bottom: 7px;
+}
+
+.sl-prifbot ul li:before,.sl-prpri {
+    position: absolute;
+    display: inline-block;
+}
+
+.sl-prifbot ul li:last-child {
+    margin-bottom: 0;
+}
+
+.sl-prifbot ul li:before {
+    height: 6px;
+    top: 6px;
+    background: #515151;
+}
+
+.sl-prifbot ul li,.sl-prifs {
+    position: relative;
+}
+
+.sl-prbot {
+    text-align: center;
+}
+
+.sllpbox{
+	margin-left: 30%;
+	color: yellow;
+}
+
+.hot{
+	font-weight: bold;
+	font-size:15px;
+	color: red;
+	margin-left: 5%;
+}
